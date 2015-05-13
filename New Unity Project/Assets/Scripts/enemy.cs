@@ -11,8 +11,18 @@ public class enemy: MonoBehaviour {
 	public float rotationDamping;
 	public float moveSpeed;
 	public static bool isPlayerAlive = true;
-	
-	
+	public GameObject flame;
+
+	public void Shoot (GameObject flameObject)
+	{
+		if(flameObject == null) return;
+		Rigidbody flameRigidbody = flameObject.GetComponent<Rigidbody>();
+		flameRigidbody.AddForce(transform.forward * flameSpeed);
+		flameObject.transform.forward = transform.forward;
+		
+		
+		
+	}
 	// Use this for initialization
 	void Start () {
 		
@@ -53,16 +63,7 @@ public class enemy: MonoBehaviour {
 	
 	void attack()
 	{
-		public void Shoot (GameObject flameObject)
-		{
-			if(flameObject == null) return;
-			Rigidbody flameRigidbody = flameObject.GetComponent<Rigidbody>();
-			flameRigidbody.AddForce(transform.forward * flameSpeed);
-			flameObject.transform.forward = transform.forward;
-			
-			
-			
-		}
+		Shoot (flame); 
 		RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.forward, out hit))
 		{

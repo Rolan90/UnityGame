@@ -12,11 +12,11 @@ public class ObjectCreator : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		for(int i=0;i<numberOfCopies;++i){
+		/*for(int i=0;i<numberOfCopies;++i){
 			Instantiate(objectToClone, new Vector3(i,i,i), Quaternion.identity);
 			
 			
-		}	
+		}	*/
 	}
 	
 	// Update is called once per frame

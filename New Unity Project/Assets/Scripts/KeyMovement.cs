@@ -38,14 +38,7 @@ public class KeyMovement : MonoBehaviour {
 		if (Input.GetKey (KeyCode.E)){
 			transform.Rotate(new Vector3(0, angularSpeed * Time.deltaTime, 0));
 		}
-		/*
-		Ray ray=Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hit;
-		if (Physics.Raycast (ray, hit)) {
-			transform.LookAt(hit.point);
-			transform.position = Vector3.Lerp(transform.position,hit.point,smooth);
-		}
-		transform.rotation = Quaternion.Euler (0.0f, 0.0f, posz);*/
+
 
 
 	

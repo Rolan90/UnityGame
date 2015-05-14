@@ -55,10 +55,10 @@
      <Compile Include="Assets\Scripts\DamagerPoison.cs" />
      <Compile Include="Assets\Scripts\EnemyHit.cs" />
      <Compile Include="Assets\Scripts\KeyMovement.cs" />
-     <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\ObjectCreator.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PointAndClickMovement.cs" />
+     <Compile Include="Assets\Scripts\SimpleSmoothMouseLook.cs" />
      <Compile Include="Assets\Scripts\enemy.cs" />
      <Compile Include="Assets\Scripts\enmeyIAScript.cs" />
      <Compile Include="Assets\Scripts\healthScript.cs" />

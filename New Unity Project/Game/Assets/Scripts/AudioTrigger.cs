@@ -9,11 +9,11 @@ public class AudioTrigger : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider other){
 		Debug.Log ("Ha entrado yeah suena voz mia suena!");
-
-		playSonidoVoz();
+		if(lanzar==true)
+			playSonidoVoz();
 	}
 	public void playSonidoVoz(){
 		GetComponent<AudioSource>().PlayOneShot(AudioVoice);
-
+		lanzar = false;
 	}
 }
